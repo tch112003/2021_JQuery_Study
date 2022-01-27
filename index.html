@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <title>Welcome to JQuery!!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#stuff").toggle();
+            });
+        });
+    </script>
 </head>
 <body>
-
+<div id="stuff">pineapple, laundry basket, water heater, apple</div>
+<button>click me</button>
 </body>
 </html>
